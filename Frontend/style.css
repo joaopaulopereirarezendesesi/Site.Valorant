@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+footer {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: "Valorant Font";
+  src: url("/Code Organization/Frontend/LIMA/fonts/Valorant Font.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(
+    135deg,
+    #1c1c1c,
+    #2b2b2b,
+    #3a3a3a,
+    #2b2b2b,
+    #1c1c1c
+  );
+  background-size: 400% 400%;
+  color: #fff;
+  margin: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+header {
+  font-family: "Valorant Font", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  color: #8b0000;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav.main-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav.main-navigation .nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+nav.main-navigation .nav-list li {
+  display: inline;
+  font-size: 1.2rem;
+  color: white;
+  padding: 5px 15px;
+}
+
+nav.main-navigation .nav-list li:hover {
+  background-color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 80px);
+  padding-top: 80px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  font-family: "Valorant Font", sans-serif;
+  color: red;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 12%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.5;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.card:hover::before {
+  transform: scale(1.1);
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.card:hover h2 {
+  transform: scale(1.2);
+  color: #ff6347;
+}
+
+.card.card1 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/01gww4344ga2w4g105yz.webp");
+}
+
+.card.card2 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
+}
+
+.card.card3 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/valorant-icebox-ep-8-meio-ataque-depois.webp");
+}
+
+.card.card4 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/mapa-sunset-valorant-2-copiar-scaled.jpg");
+}
+
+.card.card5 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/haven4.jpg");
+}
+
+.card.card6 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/mapa-ascent-valorant-4-1120x630.jpg");
+}
+
+.card.card7 {
+  background-image: url("/Code Organization/Frontend/LIMA/Imagens/Loading_Screen_Abyss.webp");
+}
