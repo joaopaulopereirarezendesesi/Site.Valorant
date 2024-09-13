@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Valorant Font";
+    src: url("/fonts/Valorant Font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: center; 
+    height: 100vh;
+    padding-right: 40px; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    background: rgba(0, 0, 0, 0.6);
+    gap: 20px;
+}
+.card {
+    font-family: "Valorant Font", sans-serif;
+    color: red;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 12%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.5;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.card:hover::before {
+    transform: scale(1.1);
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.card:hover h2 {
+    transform: scale(1.2);
+    color: #ff6347;
+}
+
+.card.card1 {
+    background-image: url("/Imagens/01gww4344ga2w4g105yz.webp");
+}
+
+.card.card2 {
+    background-image: url("/Imagens/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
+}
+
+.card.card3 {
+    background-image: url("/Imagens/valorant-icebox-ep-8-meio-ataque-depois.webp");
+}
+
+.card.card4 {
+    background-image: url("/Imagens/mapa-sunset-valorant-2-copiar-scaled.jpg");
+}
+
+.card.card5 {
+    background-image: url("/Imagens/haven4.jpg");
+}
+
+.card.card6 {
+    background-image: url("/Imagens/mapa-ascent-valorant-4-1120x630.jpg");
+}
