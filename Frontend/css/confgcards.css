@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-.container {
+.maps {
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
