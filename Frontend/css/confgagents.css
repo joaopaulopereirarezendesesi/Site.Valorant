@@ -1,0 +1,178 @@
+/* Fonte personalizada para o site */
+@font-face {
+    font-family: "Valorant Font";
+    src: url("../../fonts/Valorant Font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Seções de mapas, agentes e habilidades */
+  .maps, .agents, .skills {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .maps {
+    width: 15%; /* Largura específica para a seção de mapas */
+  }
+  
+  .agents {
+    width: 70%; /* Largura específica para a seção de agentes */
+  }
+  
+  .skills {
+    width: 15%; /* Largura específica para a seção de habilidades */
+  }
+  
+  /* Configurações de layout para partes superior e inferior dos agentes */
+  .toppart,
+  .bottompart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem conforme necessário */
+  }
+  
+  /* Estilos para os cartões de agentes */
+  .cardagnts {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px;
+    perspective: 2500px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Wrapper dos cartões com transição e estilo inicial */
+  .wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .wrapper img {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* A imagem cobre toda a área */
+  }
+  
+  /* Estilos para o nome dos agentes */
+  .name-text {
+    font-family: "Valorant Font", sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    z-index: 2;
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+  
+  .cardagnts:hover .name-text {
+    bottom: -30px; /* O texto se move para fora ao passar o mouse */
+    opacity: 1;
+  }
+  
+  /* Animações ao passar o mouse nos cartões de agentes */
+  .cardagnts:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .cardagnts:hover .character {
+    opacity: 1;
+    transform: translate3d(5%, -20%, 670px); /* Efeito de movimento 3D */
+  }
+  
+  /* Transições para os wrappers ao passar o mouse */
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  /* Efeitos de gradiente antes do hover */
+  .wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  /* Efeitos ao passar o mouse nos wrappers */
+  .cardagnts:hover .wrapper::before,
+  .cardagnts:hover .wrapper::after {
+    opacity: 1;
+  }
+  
+  .cardagnts:hover .wrapper::after {
+    height: 120px; /* Aumenta a altura do gradiente inferior */
+  }
+  
+  .cardagnts:hover .cover-image {
+    opacity: 0.3; /* Reduz a opacidade da imagem de fundo */
+  }
+  
+  /* Personagem com efeito de movimento ao passar o mouse */
+  .character {
+    width: 50%;
+    opacity: 0;
+    transition: all 0.5s;
+    filter: drop-shadow(2px 2px 2px #000);
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .cardagnts:hover .character {
+    opacity: 1;
+    transform: translate3d(5%, -20%, 670px);
+  }
+  

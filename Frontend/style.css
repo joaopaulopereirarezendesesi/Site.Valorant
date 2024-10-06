@@ -6,6 +6,25 @@
   text-decoration: none;
 }
 
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(
+    135deg,
+    #1c1c1c,
+    #2b2b2b,
+    #3a3a3a,
+    #2b2b2b,
+    #1c1c1c
+  );
+  background-size: 400% 400%;
+  color: #fff;
+}
+
 footer {
   display: none;
   opacity: 0;
@@ -14,15 +33,9 @@ footer {
 
 @font-face {
   font-family: "Valorant Font";
-  src: url("/fonts/Valorant Font.ttf")
-    format("truetype");
+  src: url("/fonts/Valorant Font.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 a {
@@ -52,24 +65,6 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  animation: gradientShift 15s ease infinite;
-  background: linear-gradient(
-    135deg,
-    #1c1c1c,
-    #2b2b2b,
-    #3a3a3a,
-    #2b2b2b,
-    #1c1c1c
-  );
-  background-size: 400% 400%;
-  color: #fff;
-  margin: 0;
 }
 
 @keyframes gradientShift {
@@ -160,10 +155,6 @@ nav.main-navigation .nav-list li:hover {
   opacity: 1;
 }
 
-.card:hover::before {
-  transform: scale(1.1);
-}
-
 .card h2 {
   font-size: 2rem;
   color: white;
@@ -178,29 +169,29 @@ nav.main-navigation .nav-list li:hover {
 }
 
 .card.card1 {
-  background-image: url("/img/01gww4344ga2w4g105yz.webp");
+  background-image: url("/img/maps/01gww4344ga2w4g105yz.webp");
 }
 
 .card.card2 {
-  background-image: url("/img/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
+  background-image: url("/img/maps/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
 }
 
 .card.card3 {
-  background-image: url("/img/valorant-icebox-ep-8-meio-ataque-depois.webp");
+  background-image: url("/img/maps/valorant-icebox-ep-8-meio-ataque-depois.webp");
 }
 
 .card.card4 {
-  background-image: url("/img/mapa-sunset-valorant-2-copiar-scaled.jpg");
+  background-image: url("/img/maps/mapa-sunset-valorant-2-copiar-scaled.jpg");
 }
 
 .card.card5 {
-  background-image: url("/img/haven4.jpg");
+  background-image: url("/img/maps/haven4.jpg");
 }
 
 .card.card6 {
-  background-image: url("/img/mapa-ascent-valorant-4-1120x630.jpg");
+  background-image: url("/img/maps/mapa-ascent-valorant-4-1120x630.jpg");
 }
 
 .card.card7 {
-  background-image: url("/img/Loading_Screen_Abyss.webp");
+  background-image: url("/img/maps/Loading_Screen_Abyss.webp");
 }

@@ -1,119 +1,23 @@
-.card.card1 {
-  background-image: url("/img/01gww4344ga2w4g105yz.webp");
+.card1 {
+  background-image: url("/img/maps/01gww4344ga2w4g105yz.webp");
 }
 
-.card.card2 {
-  background-image: url("/img/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
+.card2 {
+  background-image: url("/img/maps/05ea5a1b66bf52b9f64eb003903c9962b6c43136-1694x952.jpg");
 }
 
-.card.card3 {
-  background-image: url("/img/valorant-icebox-ep-8-meio-ataque-depois.webp");
+.card3 {
+  background-image: url("/img/maps/valorant-icebox-ep-8-meio-ataque-depois.webp");
 }
 
-.card.card4 {
-  background-image: url("/img/mapa-sunset-valorant-2-copiar-scaled.jpg");
+.card4 {
+  background-image: url("/img/maps/mapa-sunset-valorant-2-copiar-scaled.jpg");
 }
 
-.card.card5 {
-  background-image: url("/img/haven4.jpg");
+.card5 {
+  background-image: url("/img/maps/haven4.jpg");
 }
 
-.card.card6 {
-  background-image: url("/img/mapa-ascent-valorant-4-1120x630.jpg");
-}
-
-.card {
-  width: 255px;
-  height: 500px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 36px;
-  perspective: 2500px;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
-.cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.wrapper {
-  transition: all 0.5s;
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  z-index: -1;
-  background: #000;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.wrapper img {
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.card:hover .wrapper {
-  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-}
-
-.wrapper::before,
-.wrapper::after {
-  content: "";
-  opacity: 0;
-  width: 100%;
-  height: 80px;
-  transition: all 0.5s;
-  border-radius: 30px;
-  position: absolute;
-  left: 0;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.wrapper::before {
-  top: 0;
-  height: 100%;
-  background-image: linear-gradient(to top, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%);
-}
-
-.wrapper::after {
-  bottom: 0;
-  opacity: 1;
-  background-image: linear-gradient(to bottom, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%);
-}
-
-.card:hover .wrapper::before,
-.wrapper::after {
-  opacity: 1;
-}
-
-.card:hover .wrapper::after {
-  height: 120px;
-}
-
-.card:hover .cover-image {
-  opacity: 0.3;
-}
-
-.character {
-  width: 40%;
-  opacity: 0;
-  transition: all 0.5s;
-  filter: drop-shadow(2px 2px 2px #000);
-  position: absolute;
-  z-index: -1;
-}
-
-.skye {
-  width: 80%;
-}
-
-.card:hover .character {
-  opacity: 1;
-  transform: translate3d(5%, -20%, 670px);
+.card6 {
+  background-image: url("/img/maps/mapa-ascent-valorant-4-1120x630.jpg");
 }
