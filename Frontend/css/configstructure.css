@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  header h1 {
+    font-family: "Valorant Font", sans-serif;
+    font-size: 3rem;
+    color: red;
+    margin: 0;
+  }
+  
+  .percentage {
+    width: 88.5%;
+    font-family: "Valorant Font", sans-serif;
+  }
+  
+  .winratepercentage,
+  .results {
+    margin: 4px;
+    display: flex;
+  }
+  
+  .element1,
+  .element3 {
+    margin-right: 3px;
+  }
+  

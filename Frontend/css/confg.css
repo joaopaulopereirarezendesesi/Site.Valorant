@@ -5,6 +5,18 @@
   font-style: normal;
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .container {
   display: flex;
   height: 100vh;
@@ -25,55 +37,22 @@
   margin: 0;
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-header {
+.maps,
+.agents,
+.skills {
   display: flex;
-  background-color: #333;
-  color: white;
-  padding: 40px;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-}
-
-header h1 {
-  font-family: "Valorant Font", sans-serif;
-  font-size: 3rem;
-  color: red;
-  margin: 0;
-}
-
-.logomap {
-  width: 11.5%;
+  flex-direction: column;
   height: 100%;
 }
 
-.percentage{
-  justify-content: center; 
-  font-family: "Valorant Font", sans-serif;
+.maps {
+  width: 15%; 
 }
 
-.winratepercentage,
-.results {
-  margin: 4px;
-  display: flex;
+.agents {
+  width: 70%;
 }
 
-.element1,
-.element3 {
-  margin-right: 3px;
+.skills {
+  width: 15%; 
 }
-
-
-

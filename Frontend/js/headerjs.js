@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function animatePercentage(targetPercentage) {
   const percentageElement = document.getElementById("winrate");
   let currentPercentage = 0;
-  const duration = 2000;
+  const duration = 900;
   const totalSteps = duration / 16;
   const initialIncrement = targetPercentage / totalSteps;
 

@@ -6,25 +6,6 @@
     font-style: normal;
   }
   
-  /* Seções de mapas, agentes e habilidades */
-  .maps, .agents, .skills {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .maps {
-    width: 15%; /* Largura específica para a seção de mapas */
-  }
-  
-  .agents {
-    width: 70%; /* Largura específica para a seção de agentes */
-  }
-  
-  .skills {
-    width: 15%; /* Largura específica para a seção de habilidades */
-  }
-  
   /* Configurações de layout para partes superior e inferior dos agentes */
   .toppart,
   .bottompart {
