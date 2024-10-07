@@ -21,8 +21,8 @@
   
   /* Estilos para os cartões de agentes */
   .cardagnts {
-    width: 300px;
-    height: 350px;
+    width: 280px;
+    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
